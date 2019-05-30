@@ -33,10 +33,10 @@ for i in range(nr):
     ax.bar3d(x, y, _z[i], dx, dy, dz[i], color=colors[i])
     if i<nr-1:  _z[i+1] = _z[i]+ dz[i]
          
-ax.set_title('Locked Shields and Crossed Swords')
-ax.set_xlabel('x axis')
-ax.set_ylabel('y axis')
-ax.set_zlabel('z axis')
+ax.set_title('Locked Shields(B), Crossed Swords(R) and Cyber Coalition(Y)')
+ax.set_xlabel('')
+ax.set_ylabel('')
+ax.set_zlabel('Occurrence')
 
 locs, labels = plt.yticks()
 plt.yticks(np.arange(6), ('', 'Level', 'Sector', 'Type', 'CI vector', ''), rotation=5)
